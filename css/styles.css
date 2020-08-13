@@ -204,24 +204,24 @@ i {
     padding: 20%;
   }
 
-  .stack-font{
+  .stack-font {
     font-size: 7vw;
   }
 
-  #footer{
-    margin-top: 4%
+  #footer {
+    margin-top: 4%;
   }
 
   .stack-img {
     max-width: 15vw;
     max-height: 15vw;
-    margin-top: 2vw;  
+    margin-top: 2vw;
+  }
 
-}
-
-/* phone */
-@media (max-width: 576px) {
-  .jumbotron {
-    padding: 22%;
+  /* phone */
+  @media (max-width: 576px) {
+    .jumbotron {
+      padding: 22%;
+    }
   }
 }
