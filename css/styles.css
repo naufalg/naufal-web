@@ -37,18 +37,18 @@ i {
 }
 
 /* font awesome icons */
-/* .fa-twitter-square {
-  color: #1da1f2;
+.fa-github:hover {
+  color: #211f1f;
 }
-.fa-linkedin {
+.fa-linkedin:hover {
   color: #1985bc;
 }
-.fa-instagram-square {
+.fa-instagram-square:hover {
   color: #dd2a7b;
 }
-.fa-envelope-square {
+.fa-envelope-square:hover {
   color: #d44638;
-} */
+}
 
 /* color */
 .white {
@@ -71,6 +71,19 @@ i {
 .block {
   display: block;
 }
+
+.nav-link:hover {
+  box-shadow: inset 0 10px 10px -10px #fff;
+}
+
+.text-light:hover {
+  color: black;
+}
+
+.navbar {
+  padding: 5px 0;
+}
+
 /* headline */
 .jumbotron {
   background: url(/images/headline.jpg) no-repeat center center;
