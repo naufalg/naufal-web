@@ -5,6 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naufal Ghifari</title>
+    <link rel="icon" type="image/png" href="./Images/NaufalG.png" />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d95e176b2d.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -13,38 +20,40 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <!-- fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-    rel="stylesheet"
-  />
+
   <!-- Website -->
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <!-- navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
         <a class="navbar-brand" href="#">
           <img
             src="./Images/NaufalG.png"
             width="40"
             height="40"
-            alt=""
+            alt="icons"
             loading="lazy"
           />
         </a>
@@ -67,8 +76,8 @@
             <a class="nav-link active text-light" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
-            <a class="nav-link text-light" href="#">About</a>
-            <a class="nav-link text-light" href="#">Contacts</a>
+            <a class="nav-link text-light" href="#about">About</a>
+            <a class="nav-link text-light" href="#contacts">Contacts</a>
           </div>
         </div>
       </nav>
@@ -90,7 +99,7 @@
               <p>
                 <a
                   class="btn btn-success Montserrat learn-more"
-                  href="#"
+                  href="#contacts"
                   role="button"
                   >learn more</a
                 >
@@ -107,7 +116,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <img
-                    class="avatar float-right"
+                    class="avatar float-md-right"
                     src="./Images/NaufalG.png"
                     alt=""
                   />
@@ -117,10 +126,10 @@
                     <tbody>
                       <tr>
                         <td class="align-middle">
-                          <h2 class="lato bold">
+                          <h2 class="lato bold text-shadow">
                             Naufal Ghifari
                           </h2>
-                          <h5 class="roboto">
+                          <h5 class="roboto text-shadow">
                             Web Developer
                           </h5>
                           <hr class="hr-abt" />
@@ -138,32 +147,105 @@
             </div>
           </div>
         </section>
-        <section>
-          <div id="contacts" class="jumbotron-fluid">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
+        <!-- stack -->
+        <section id="stack" class="lato">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col">
+                <h3 class="text-shadow roboto">Stack I'm using</h3>
+                <hr class="hr-stack" />
               </div>
+            </div>
+            <!-- stack badge -->
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2 text-center">
+                <img
+                  class="stack-img img-fluid"
+                  src="./Images/mongo.png"
+                  alt="mongodb"
+                />
+                <p class="block text-shadow roboto">
+                  <span class="stack-font">m</span>ongoDB
+                </p>
+              </div>
+              <div class="col-md-2 text-center">
+                <img
+                  class="stack-img img-fluid"
+                  src="./Images/express-sq.png"
+                  alt="express"
+                />
+                <p class="block text-shadow roboto">
+                  <span class="stack-font">e</span>xpress
+                </p>
+              </div>
+              <div class="col-md-2 text-center">
+                <img
+                  class="stack-img img-fluid"
+                  src="./Images/react.png"
+                  alt="react"
+                />
+                <p class="block text-shadow roboto">
+                  <span class="stack-font">R</span>eact
+                </p>
+              </div>
+              <div class="col-md-2 text-center">
+                <img
+                  class="stack-img img-fluid"
+                  src="./Images/node.png"
+                  alt="nodejs"
+                />
+                <p class="block text-shadow roboto">
+                  <span class="stack-font">n</span>ode.JS
+                </p>
+              </div>
+              <div class="col-md-2"></div>
             </div>
           </div>
         </section>
       </article>
     </main>
-
-    <footer>
-      <div  class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <p id="footer" class="text-center roboto">
-              Copyright 2020 All Rights Reserved
-            </p>
+    <!-- contacts -->
+    <section>
+      <div id="contacts" class="jumbotron-fluid">
+        <div class="container justify-content-center">
+          <div class="row">
+            <div class="col-12 text-center Montserrat white text-shadow">
+              Contacts
+              <hr class="hr-cnt justify-content-center" />
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-1 justify-content-center">
+              <a href="https://www.linkedin.com/in/naufal-ghifari-380798117/"><i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            <div class="col-lg-1 justify-content-center">
+              <a href="https://twitter.com/N_Ghifari7"><i class="fab fa-twitter-square fa-3x"></i> </a>
+            </div>
+            <div class="col-lg-1 justify-content-center">
+              <a href="https://www.instagram.com/naufalg_7/?hl=en"><i class="fab fa-instagram-square fa-3x"></i> </a>
+            </div>
+            <div class="col-lg-1 justify-content-center">
+              <a href="mailto:naufalghifari7@gmail.com"><i class="fas fa-envelope-square fa-3x"></i> </a>
+            </div>
+            <div class="col-lg-4"></div>
           </div>
         </div>
+        <!-- footer -->
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div id="footer" class="col text-center roboto">
+                Copyright 2020 All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- script -->
       </div>
-    </footer>
-    <!-- script -->
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
