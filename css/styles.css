@@ -27,11 +27,11 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #5c5c5c;
 }
 
-
 /* main */
 i {
   color: #fff;
   filter: drop-shadow(5px 7px 5px rgba(0, 0, 0, 0.3));
+  transition: 1s;
 }
 
 /* fonts */
@@ -122,12 +122,19 @@ i {
   font-size: 4.5vw;
   font-weight: 700;
   line-height: 80px;
-  text-shadow: 7px 5px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 7px 5px 3px rgba(0, 0, 0, 0.562);
   letter-spacing: 0.03em;
 }
 
 .learn-more {
   filter: drop-shadow(5px 7px 10px rgba(0, 0, 0, 0.25));
+  transition: 1s;
+  border: 3px solid rgb(0, 141, 12);
+}
+
+.learn-more:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(5px 7px 5px rgba(0, 0, 0, 0.5));
 }
 
 .navbar-custom {
@@ -148,6 +155,7 @@ i {
   width: 300px;
   height: 300px;
   filter: drop-shadow(10px 15px 15px rgba(0, 0, 0, 0.3));
+  float: right;
 }
 
 .hr-abt {
@@ -171,14 +179,15 @@ i {
 }
 
 .stack-box:hover {
-  transform:scale(1.3);
+  transform: scale(1.3);
 }
 
 .stack-img {
   max-width: 10vw;
   max-height: 10vw;
   filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.35));
-  margin-top: 2vw;
+  margin: 2vw 3vw 0;
+  transition: 1s;
 }
 
 .stack-font {
@@ -214,6 +223,15 @@ i {
   padding: 0 -20%;
 }
 
+.cont-icon {
+  padding: 0 1vw;
+  transition: 0.5s;
+}
+
+.cont-icon:hover {
+  transform: scale(1.4);
+}
+
 /* footer */
 #footer {
   background: #3282b8;
@@ -227,18 +245,18 @@ i {
 /* animation */
 .fade-in {
   animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-} 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-   } 
-} 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* media query */
 /* large screen */
@@ -262,11 +280,13 @@ i {
     padding: 1vw;
   }
 
-  
-.navbar {
-  padding: 10px 10px;
-}
+  .navbar {
+    padding: 10px 10px;
+  }
 
+  .stack-box {
+    font-size: 2vw;
+  }
 }
 
 /* tablet */
@@ -276,23 +296,46 @@ i {
   }
 
   .stack-font {
-    font-size: 7vw;
+    font-size: 5.5vw;
+  }
+
+  .stack-box {
+    font-size: 0.9em;
   }
 
   #footer {
     margin-top: 4%;
   }
 
-  .stack-img {
-    max-width: 15vw;
-    max-height: 15vw;
-    margin-top: 2vw;
+  #about {
+    align-items: center;
+  }
+
+  .avatar {
+    max-width: 30vw;
+    max-height: 30vw;
+    float: none;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .ava-col {
+    max-height: 40vw;
   }
 
   /* phone */
   @media (max-width: 576px) {
     .jumbotron {
-      padding: 22%;
+      padding: 25%;
     }
+  }
+
+  .stack-box {
+    font-size: 0.8em;
+  }
+
+  .stack-img {
+    max-width: 12vw;
+    max-height: 12vw;
   }
 }
