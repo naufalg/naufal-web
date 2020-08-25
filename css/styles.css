@@ -61,15 +61,19 @@ i {
 /* font awesome icons */
 .fa-github:hover {
   color: #211f1f;
+  text-shadow: 0 0 3px #fff;
 }
 .fa-linkedin:hover {
   color: #1985bc;
+  text-shadow: 0 0 3px #fff;
 }
 .fa-instagram-square:hover {
   color: #dd2a7b;
+  text-shadow: 0 0 3px #fff;
 }
 .fa-envelope-square:hover {
   color: #d44638;
+  text-shadow: 0 0 3px #fff;
 }
 
 /* color */
@@ -108,6 +112,11 @@ i {
 
 .navbar {
   padding: 5px 0;
+}
+
+
+.nav-active {
+  text-decoration: underline;
 }
 
 /* headline */
@@ -216,7 +225,7 @@ i {
   border-radius: 2px;
 }
 #contacts {
-  background: #3282b8;
+  background: #16213e;
   padding: 1%;
   font-size: 1.1rem;
   box-shadow: inset 0px 7px 15px rgba(0, 0, 0, 0.3);
@@ -237,7 +246,7 @@ i {
 
 /* footer */
 #footer {
-  background: #3282b8;
+  background: #16213e;
   font-weight: 100;
   font-size: 0.6em;
   color: white;
@@ -320,6 +329,8 @@ i {
     float: none;
     justify-content: center;
     align-content: center;
+    margin: inherit auto;
+    align-items: center;
   }
 
   .ava-col {
@@ -331,14 +342,14 @@ i {
     .jumbotron {
       padding: 25%;
     }
-  }
 
-  .stack-box {
-    font-size: 0.8em;
-  }
+    .stack-box {
+      font-size: 0.8em;
+    }
 
-  .stack-img {
-    max-width: 12vw;
-    max-height: 12vw;
+    .stack-img {
+      max-width: 12vw;
+      max-height: 12vw;
+    }
   }
 }

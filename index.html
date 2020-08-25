@@ -48,15 +48,7 @@
     <header>
       <!-- navbar -->
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
-        <a class="navbar-brand" href="#">
-          <!-- <img
-            src="./Images/NaufalG.png"
-            width="40"
-            height="40"
-            alt="icons"
-            loading="lazy"
-          /> -->
-        </a>
+        <a class="navbar-brand" href="#"> </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -72,12 +64,17 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarNavAltMarkup"
         >
-          <div class="navbar-nav">
-            <a class="nav-link text-light" href="#"
+          <div class="navbar-nav montserrat">
+            <a id="top-page" class="nav-link text-light nav-active" href="#top"
               >Home <span class="sr-only">(current)</span></a
             >
             <a class="nav-link text-light" href="#about">About</a>
             <a class="nav-link text-light" href="#contacts">Contacts</a>
+            <a
+              class="nav-link text-light"
+              href="./pages/portfolio/portfolio.html"
+              >Portfolio</a
+            >
           </div>
         </div>
       </nav>
@@ -91,15 +88,18 @@
           <div class="row row-headline">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-              <h1 class="col-md roboto headline">
-                Together,<br />
-                Let’s bring your <span class="patrick">idea</span> to
-                <span class="bebas">life</span>
+              <h1 id="title-1" class="col-md roboto headline">
+                <span id="together">Together,</span><br />
+                <span id="lets"
+                  >Let’s bring your <span class="patrick">idea</span></span
+                >
+                <span id="to">to</span>
+                <span id="life" class="bebas">life</span>
               </h1>
-              <p>
+              <p id="learn-more">
                 <a
                   class="btn btn-success Montserrat learn-more"
-                  href="#contacts"
+                  href="#about"
                   role="button"
                   >learn more</a
                 >
@@ -122,24 +122,18 @@
                     <tbody>
                       <tr>
                         <td class="align-middle">
-                          <h2 class="lato bold text-shadow">
+                          <h2 id="abt-txt-1" class="lato bold text-shadow">
                             Naufal Ghifari
                           </h2>
-                          <h5 class="roboto text-shadow">
+                          <h5 id="abt-txt-2" class="roboto text-shadow">
                             Web Developer
                           </h5>
                           <hr class="hr-abt" />
-                          <p>
+                          <p id="abt-txt-3">
                             Based in Jakarta, <br />
                             I have a passion for making web application <br />
                             that simple, impactive, and meaningful
                           </p>
-                          <a
-                            class="btn btn-success Montserrat learn-more"
-                            href="./pages/portfolio/portfolio.html"
-                            role="button"
-                            >My works</a
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -154,14 +148,14 @@
           <div class="container">
             <div class="row text-center">
               <div class="col">
-                <h3 class="text-shadow roboto">Stack I'm using</h3>
+                <h3 id="stack-text" class="text-shadow roboto">Tech stack</h3>
                 <hr class="hr-stack" />
               </div>
             </div>
             <!-- stack badge -->
             <div class="row justify-content-center">
               <div class="col-xs-2"></div>
-              <div class="col-xs-2 text-center stack-box">
+              <div id="stack-1" class="col-xs-2 text-center stack-box">
                 <img
                   class="stack-img img-fluid"
                   src="./Images/mongo.png"
@@ -171,7 +165,7 @@
                   <span class="stack-font">m</span>ongoDB
                 </p>
               </div>
-              <div class="col-xs-2 text-center stack-box">
+              <div id="stack-2" class="col-xs-2 text-center stack-box">
                 <img
                   class="stack-img img-fluid"
                   src="./Images/express-sq.png"
@@ -181,7 +175,7 @@
                   <span class="stack-font">e</span>xpress
                 </p>
               </div>
-              <div class="col-xs-2 text-center stack-box">
+              <div id="stack-3" class="col-xs-2 text-center stack-box">
                 <img
                   class="stack-img img-fluid"
                   src="./Images/react.png"
@@ -191,7 +185,7 @@
                   <span class="stack-font">R</span>eact
                 </p>
               </div>
-              <div class="col-xs-2 text-center stack-box">
+              <div id="stack-4" class="col-xs-2 text-center stack-box">
                 <img
                   class="stack-img img-fluid"
                   src="./Images/node.png"

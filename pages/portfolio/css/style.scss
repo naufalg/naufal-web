@@ -1,8 +1,22 @@
+// variables
 // color
 $navbar-color: #0d090f;
 $navbar-hover: #39333b;
 $color-1: #fafffd;
 $color-2: #3282b8;
+$color-3: #16213e;
+
+// extends
+// animation
+%glow-icon {
+  text-shadow: 0 0 3px #fff;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
 
 /* global */
 * {
@@ -60,20 +74,29 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* font awesome icons */
 .fa-3x {
-    color: $color-1;
+  color: $color-1;
+  transition: 0.5s;
 }
 
 .fa-github:hover {
   color: #211f1f;
+  @extend %glow-icon;
+  @include transform(scale(1.2));
 }
 .fa-linkedin:hover {
   color: #1985bc;
+  @extend %glow-icon;
+  @include transform(scale(1.2));
 }
 .fa-instagram-square:hover {
   color: #dd2a7b;
+  @extend %glow-icon;
+  @include transform(scale(1.2));
 }
 .fa-envelope-square:hover {
   color: #d44638;
+  @extend %glow-icon;
+  @include transform(scale(1.2));
 }
 
 /* color */
@@ -115,12 +138,12 @@ nav {
 }
 
 .active {
-    background-color: $navbar-hover;
+  background-color: $navbar-hover;
 }
 
 /* headline */
 .headline {
-  margin: 1.2vh 0 0 0;
+  padding: 3vh 0 0 0;
 }
 
 .avatar {
@@ -130,12 +153,12 @@ nav {
 }
 
 //   my works
-.card-image {
-}
+// .card-image {
+// }
 
 // footer
 .page-footer {
-    background-color: $color-2;
+  background-color: $color-3;
 }
 
 /* media query */
