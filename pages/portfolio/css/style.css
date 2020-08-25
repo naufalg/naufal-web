@@ -1,0 +1,144 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #5c5c5c;
+}
+
+/* fonts */
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.patrick {
+  font-family: "Patrick Hand", cursive;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* font awesome icons */
+.fa-3x {
+  color: #fafffd;
+}
+
+.fa-github:hover {
+  color: #211f1f;
+}
+
+.fa-linkedin:hover {
+  color: #1985bc;
+}
+
+.fa-instagram-square:hover {
+  color: #dd2a7b;
+}
+
+.fa-envelope-square:hover {
+  color: #d44638;
+}
+
+/* color */
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #0000;
+}
+
+.color-1 {
+  color: #fafffd;
+}
+
+.color-2 {
+  color: #0d090f;
+}
+
+/* main */
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/* class */
+.nav-wrapper {
+  background-color: #0d090f;
+}
+
+nav ul li:hover {
+  background-color: #39333b;
+}
+
+.active {
+  background-color: #39333b;
+}
+
+/* headline */
+.headline {
+  margin: 1.2vh 0 0 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.page-footer {
+  background-color: #3282b8;
+}
+
+/* media query */
+/* large screen */
+/* small screen */
+@media (max-width: 992px) {
+  .avatar {
+    max-width: 50%;
+  }
+}
+
+/* tablet */
+/* phone */
+/*# sourceMappingURL=style.css.map */
