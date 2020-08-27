@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-//   scrollrevealjs
+// scrollrevealjs
 // headline
 ScrollReveal().reveal('.avatar', {distance: "200px", easing: "ease-out"});
-ScrollReveal().reveal('#hi', {delay:500, distance: "200px", easing: "ease-out"});
-ScrollReveal().reveal('#i-am', {delay:1200, distance: "200px", easing: "ease-out"});
-ScrollReveal().reveal('#here', {delay:1600, distance: "200px", easing: "ease-out"});
+ScrollReveal().reveal('#hi', {delay:400, distance: "200px", easing: "ease-out"});
+ScrollReveal().reveal('#i-am', {delay:1000, distance: "200px", easing: "ease-out"});
+ScrollReveal().reveal('#here', {delay:1400, distance: "200px", easing: "ease-out"});
 // works
-ScrollReveal().reveal('#card-1', {delay:2000, interval:400, distance: "200px", easing: "ease-out"});
-ScrollReveal().reveal('#card-2', {delay:2200, interval:400, distance: "200px", easing: "ease-out"});
-ScrollReveal().reveal('#card-3', {delay:2400, interval:400, distance: "200px", easing: "ease-out"});
+ScrollReveal().reveal('#card-1', {delay:1500, interval:600, distance: "200px", easing: "ease-out"});
+// ScrollReveal().reveal('#card-2', {delay:2200, interval:400, distance: "200px", easing: "ease-out"});
+// ScrollReveal().reveal('#card-3', {delay:2400, interval:400, distance: "200px", easing: "ease-out"});
